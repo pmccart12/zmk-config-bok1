@@ -1,0 +1,6 @@
+if SHIELD_BOK1
+
+config ZMK_KEYBOARD_NAME
+    default "bok1"
+
+endif
