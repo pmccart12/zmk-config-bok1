@@ -4,3 +4,23 @@ config ZMK_KEYBOARD_NAME
     default "bok1"
 
 endif
+
+
+# Deep Sleep Configuration for Kconfig.defconfig
+
+if SHIELD_BOK1
+
+# Enable deep sleep
+config ZMK_SLEEP
+    default y
+
+# Time before entering deep sleep (in milliseconds)
+# 900000ms = 15 minutes
+config ZMK_IDLE_SLEEP_TIMEOUT
+    default 600000
+
+# Optional: Disable external power management
+config ZMK_EXT_POWER
+    default n
+
+endif
